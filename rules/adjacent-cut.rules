@@ -1,0 +1,14 @@
+SWARM_RULES_V1
+layer V1 gds_layer=21 datatype=0 kind=cut source_datatypes=* cut_rectangles_only=true
+rule adjacent-cut adjacent_cut
+ layer=V1
+ adjacent_cuts=1
+ within=17
+ within_metric=edge_square
+ within_inclusive=true
+ spacing=18
+ spacing_metric=edge
+ source_classes=*
+ target_classes=*
+ except_same_pg_net=false
+end

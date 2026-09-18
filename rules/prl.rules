@@ -1,0 +1,11 @@
+SWARM_RULES_V1
+layer M4 gds_layer=40 datatype=0 kind=routing source_datatypes=*
+
+rule prl prl
+  layer=M4
+  mode=minimum
+  gap=24
+  min_prl=44
+  orientation=horizontal
+  exclude_shielded=true
+end

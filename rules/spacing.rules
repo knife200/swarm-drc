@@ -1,0 +1,9 @@
+SWARM_RULES_V1
+layer M2 gds_layer=20 datatype=0 kind=routing source_datatypes=*
+
+rule spacing spacing
+ layer=M2
+ spacing=18
+ metric=euclidean
+ orientation=any
+end

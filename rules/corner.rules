@@ -1,0 +1,12 @@
+SWARM_RULES_V1
+layer M2 gds_layer=20 datatype=0 kind=routing source_datatypes=*
+
+rule corner corner
+  layer=M2
+  corner_type=convex
+  metric=euclidean
+  width_thresholds=
+  spacing_x=20
+  spacing_y=20
+  projection=disjoint
+end

@@ -1,0 +1,12 @@
+SWARM_RULES_V1
+layer M2 gds_layer=20 datatype=0 kind=routing source_datatypes=*
+layer V1 gds_layer=21 datatype=0 kind=cut source_datatypes=*
+
+rule enclosure enclosure
+ inner_layer=V1
+ outer_layer=M2
+ mode=scalar
+ good_margins=5,5,5,5
+ partial_enclosure_limit=0
+ outside_also=false
+end
