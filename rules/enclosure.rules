@@ -8,5 +8,5 @@ rule enclosure enclosure
  mode=scalar
  good_margins=5,5,5,5
  partial_enclosure_limit=0
- outside_also=false
+ outside_also=true
 end
